@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Web Français</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-circle">
+                        <div class="logo-inner"></div>
+                    </div>
+                    <h1 class="logo-text">InSEREOO</h1>
+                </div>
+                <button id="connect-btn" class="connect-btn">Se connecter</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-center">
+                <div class="description-box">
+                    <h2>Découvrez votre potentiel professionnel</h2>
+                    <p>Explorez vos compétences, trouvez votre orientation et accédez aux meilleures opportunités de carrière grâce à notre plateforme intelligente d'évaluation et de guidance professionnelle.</p>
+                </div>
+                <button id="learn-more-btn" class="learn-more-btn">
+                    En savoir plus
+                    <span class="arrow">→</span>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Login Page -->
+    <div id="login-page" class="page hidden">
+        <div class="login-container">
+            <button id="back-btn" class="back-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m12 19-7-7 7-7"/>
+                    <path d="M19 12H5"/>
+                </svg>
+            </button>
+
+            <div class="login-content">
+                <!-- Logo and title -->
+                <div class="login-header">
+                    <div class="login-logo">
+                        <div class="login-logo-inner"></div>
+                    </div>
+                    <h1 class="login-title">InSEREOO</h1>
+                </div>
+
+                <!-- Form -->
+                <form id="login-form" class="login-form">
+                    <div class="login-help-text">
+                        <p>Connectez-vous pour accéder à votre profil personnalisé et continuer votre parcours de découverte professionnelle.</p>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Votre adresse email" required>
+                        <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder="Votre mot de passe" required>
+                        <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <circle cx="12" cy="16" r="1"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+
+                    <button type="submit" class="login-btn">Se connecter</button>
+
+                    <button type="button" id="forgot-password" class="forgot-password">
+                        Mot de passe oublié?
+                    </button>
+
+                    <button type="button" id="create-account" class="create-account-btn">
+                        Créé un compte
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div id="dashboard-page" class="page hidden">
+        <!-- Header with navigation -->
+        <header class="dashboard-header">
+            <div class="dashboard-header-content">
+                <div class="logo-section">
+                    <div class="logo-circle">
+                        <div class="logo-inner"></div>
+                    </div>
+                    <h1 class="logo-text">InSEREOO</h1>
+                </div>
+                <nav class="nav-buttons">
+                    <button id="home-btn" class="nav-btn">Accueil</button>
+                    <button id="connection-btn" class="nav-btn">Connexion</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Dashboard Content -->
+        <main class="dashboard-main">
+            <div class="dashboard-content">
+                <!-- Added welcome section with dynamic content -->
+                <div class="dashboard-welcome">
+                    <h2>Bienvenue sur votre tableau de bord</h2>
+                    <p>Commencez votre parcours de découverte professionnelle en passant nos tests personnalisés. Chaque évaluation vous rapproche de votre carrière idéale.</p>
+                </div>
+
+                <!-- Test sections container -->
+                <div class="test-sections">
+                    <!-- Test des compétences -->
+                    <section class="test-section">
+                        <h2 class="section-title">Test des compétences</h2>
+                        <div class="test-cards">
+                            <div class="test-card">
+                                <div class="card-pattern">
+                                    <!-- <div class="pattern-dots"></div> -->
+                                    <img src="/images/téléchargement.png" alt="logo PIX">
+                                </div>
+                                <div class="card-description">
+                                    <span>Évaluez vos compétences numériques</span>
+                                    <strong>PIX</strong>
+                                </div>
+                            </div>
+                            <div class="test-card">
+                                <div class="card-pattern">
+                                    <!-- <div class="pattern-dots"></div> -->
+                                    <img src="/images/téléchargement (2).png" alt="logo 123 tests">
+                                </div>
+                                <div class="card-description">
+                                    <span>Test de personnalité professionnel</span>
+                                    <strong>123Test</strong>
+                                </div>
+                            </div>
+                            <div class="test-card">
+                                <div class="card-pattern">
+                                    <!-- <div class="pattern-dots"></div> -->
+                                    <img src="/images/téléchargement (4).png" alt="logo central test">
+                                </div>
+                                <div class="card-description">
+                                    <span>Analyse comportementale</span>
+                                    <strong>Central Test</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Test d'orientations -->
+                    <section class="test-section">
+                        <h2 class="section-title">Test d'orientations</h2>
+                        <div class="test-cards">
+                            <div class="test-card">
+                                <div class="card-pattern">
+                                    <!-- <div class="pattern-dots"></div> -->
+                                    <img src="/images/images.png" alt="logo RIASEC" />
+                                </div>
+                                <div class="card-description">
+                                    <span>Découvrez vos intérêts professionnels</span>
+                                    <strong>RIASEC</strong>
+                                </div>
+                            </div>
+                            <div class="test-card">
+                                <div class="card-pattern">
+                                    <!-- <div class="pattern-dots"></div> -->
+                                    <img src="/images/téléchargement (2).jpeg" alt="logo ONISEP">
+                                </div>
+                                <div class="card-description">
+                                    <span>Orientation scolaire et professionnelle</span>
+                                    <strong>ONISEP</strong>
+                                </div>
+                            </div>
+                            <div class="test-card">
+                                <div class="card-pattern">
+                                    <!-- <div class="pattern-dots"></div> -->
+                                    <img src="/images/téléchargement (5).png" alt="logo CIDJ">
+                                </div>
+                                <div class="card-description">
+                                    <span>Information jeunesse et métiers</span>
+                                    <strong>CIDJ</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Start button -->
+                <div class="start-button-container">
+                    <button id="start-btn" class="start-btn">
+                        Commencer
+                        <span class="arrow">→</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Tests Page -->
+    <div id="tests-page" class="page hidden">
+        <!-- Expanded Header with full navigation -->
+        <header class="tests-header">
+            <div class="tests-header-content">
+                <div class="logo-section">
+                    <div class="logo-circle">
+                        <div class="logo-inner"></div>
+                    </div>
+                    <h1 class="logo-text">ISEREOO</h1>
+                </div>
+                <nav class="expanded-nav">
+                    <button class="nav-btn" id="nav-accueil">Accueil</button>
+                    <button class="nav-btn active">Tests</button>
+                    <button class="nav-btn" id="nav-metiers">Métiers</button>
+                    <button class="nav-btn" id="nav-offres">Offres</button>
+                    <button class="nav-btn" id="tests-nav-apprendre">Apprendre</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Tests Content -->
+        <main class="tests-main">
+            <div class="tests-content">
+                <!-- Test sections container -->
+                <div class="test-sections">
+                    <!-- Test des compétences -->
+                    <section class="test-section">
+                        <h2 class="section-title">Test des compétences</h2>
+                        <div class="test-cards">
+                            <div class="test-card">
+                                <div class="card-pattern">
+                                    <!-- <div class="pattern-dots"></div> -->
+                                    <img src="/images/téléchargement.png" alt="logo PIX">
+                                </div>
+                                <!-- <button class="play-btn">Jouer</button> -->
+                                <a href="https://www.bing.com/ck/a?!&&p=31ba877ef9a5b142260799ff022dc3a60a07f69ab97cb5fa7b1bf7c1be033272JmltdHM9MTc1NTMwMjQwMA&ptn=3&ver=2&hsh=4&fclid=0c409cec-d662-6ef5-2a16-8998d7626f83&psq=pix&u=a1aHR0cHM6Ly9waXguZnIv&ntb=1"class="play-btn">Commencer</a>
+
+                                <div class="card-description">
+                                    <span>Description</span>
+                                    <strong>PIX</strong>
+                                </div>
+                            </div>
+                            <div class="test-card">
+                                <div class="card-pattern">
+                                    <!-- <div class="pattern-dots"></div> -->
+                                    <img src="/images/téléchargement (2).png" alt="logo 123 tests">
+                                </div>
+                                <!-- <button class="play-btn">Jouer</button>  -->
+                                <a href="https://www.bing.com/ck/a?!&&p=91ee76eeab8e822f2c73e78b72d1ea18b8b0a5733edfac0086939f739fee4239JmltdHM9MTc1NTMwMjQwMA&ptn=3&ver=2&hsh=4&fclid=0c409cec-d662-6ef5-2a16-8998d7626f83&psq=123+test&u=a1aHR0cHM6Ly93d3cuMTIzdGVzdC5jb20v&ntb=1"class="play-btn">Commencer</a>
+                                <div class="card-description">
+                                    <span>Description</span>
+                                    <strong>123Test</strong>
+                                </div>
+                            </div>
+                            <div class="test-card">
+                                <div class="card-pattern">
+                                    <!-- <div class="pattern-dots"></div> -->
+                                    <img src="/images/téléchargement (4).png" alt="logo central test">
+                                </div>
+                                <!-- <button class="play-btn">Jouer</button> -->
+                                <a href="https://www.bing.com/ck/a?!&&p=b0462d75f3d635b0eb2fc08b24d21b21c7a5cd6a14d22305cc604796549c266aJmltdHM9MTc1NTMwMjQwMA&ptn=3&ver=2&hsh=4&fclid=0c409cec-d662-6ef5-2a16-8998d7626f83&psq=central+test&u=a1aHR0cHM6Ly93d3cuY2VudHJhbHRlc3QuZnIv&ntb=1"class="play-btn">Commencer</a>
+                                <div class="card-description">
+                                    <span>Description</span>
+                                    <strong>Central Test</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Test d'orientations -->
+                    <section class="test-section">
+                        <h2 class="section-title">Test d'orientations</h2>
+                        <div class="test-cards">
+                            <div class="test-card">
+                                <div class="card-pattern">
+                                    <!-- <div class="pattern-dots"> -->
+                                    <img src="/images/images.png" alt="logo RIASEC" />
+                                </div>
+                            
+                                <!-- button class="play-btn">Jouer</button> -->
+                                <a href="https://www.bing.com/ck/a?!&&p=e5002c7fdea632b46f180eb9535c882d20f18c619b1bcbc23ea8d7b2c8001915JmltdHM9MTc1NTMwMjQwMA&ptn=3&ver=2&hsh=4&fclid=0c409cec-d662-6ef5-2a16-8998d7626f83&psq=RIASEC&u=a1aHR0cHM6Ly9yaWFzZWMudmlyZ2luaWVib3V2YXJlbC5mci8&ntb=1"class="play-btn">Commencer</a>
+                                <div class="card-description">
+                                    <span>Description</span>
+                                    <strong>RIASEC</strong>
+                                </div>
+                            </div>
+                            <div class="test-card">
+                                <div class="card-pattern">
+                                    <!-- <div class="pattern-dots"></div> -->
+                                    <img src="/images/téléchargement (2).jpeg" alt="logo ONISEP">
+                                </div>
+                                <!-- <button class="play-btn">Jouer</button> -->
+                                <a href="https://www.bing.com/ck/a?!&&p=d3ec9978cffda4540f09d9be71285a92e9c81f8326861af6fc705369a3c2f10bJmltdHM9MTc1NTMwMjQwMA&ptn=3&ver=2&hsh=4&fclid=0c409cec-d662-6ef5-2a16-8998d7626f83&psq=test+ONISEP&u=a1aHR0cHM6Ly93d3cubGV0dWRpYW50LmZyL3Rlc3QvbWV0aWVycy9vcmllbnRhdGlvbi9wb3VyLXF1ZWxzLW1ldGllcnMtZXRlcy12b3VzLWZhaXQuaHRtbA&ntb=1"class="play-btn">Commencer</a>
+                                <div class="card-description">
+                                    <span>Description</span>
+                                    <strong>ONISEP</strong>
+                                </div>
+                            </div>
+                            <div class="test-card">
+                                <div class="card-pattern">
+                                    <!-- <div class="pattern-dots"></div> -->
+                                    <img src="/images/téléchargement (5).png" alt="logo CIDJ">
+                                </div>
+                                <!-- <button class="play-btn">Jouer</button> -->
+                                <a href="https://www.bing.com/ck/a?!&&p=c44d4b6452ceae58c8fd1eb9051aa72a8c1a9023d691fc969bb90727cce5b8e7JmltdHM9MTc1NTMwMjQwMA&ptn=3&ver=2&hsh=4&fclid=0c409cec-d662-6ef5-2a16-8998d7626f83&psq=test+CIDJ&u=a1aHR0cHM6Ly93d3cuY2lkai5jb20vcy1vcmllbnRlcg&ntb=1"class="play-btn">Commencer</a>
+                                <div class="card-description">
+                                    <span>Description</span>
+                                    <strong>CIDJ</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Profile button -->
+                <div class="profile-button-container">
+                    <button id="profile-btn" class="profile-btn">
+                        Voir votre profil
+                        <span class="arrow">→</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Offers Page -->
+    <div id="offers-page" class="page hidden">
+        <!-- Expanded Header with full navigation -->
+        <header class="offers-header">
+            <div class="offers-header-content">
+                <div class="logo-section">
+                    <div class="logo-circle">
+                        <div class="logo-inner"></div>
+                    </div>
+                    <h1 class="logo-text">ISEREOO</h1>
+                </div>
+                <nav class="expanded-nav">
+                    <button class="nav-btn" id="offers-nav-accueil">Accueil</button>
+                    <button class="nav-btn" id="offers-nav-tests">Tests</button>
+                    <button class="nav-btn" id="offers-nav-metiers">Métiers</button>
+                    <button class="nav-btn active">Offres</button>
+                    <button class="nav-btn" id="offers-nav-apprendre">Apprendre</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Offers Content -->
+        <main class="offers-main">
+            <div class="offers-content">
+                <!-- Offers sections container -->
+                <div class="offers-sections">
+                    <!-- Job offers section -->
+                    <section class="offers-section">
+                        <h2 class="offers-section-title">Voir les offres d'emploi</h2>
+                        <div class="offers-area">
+                            <div class="offers-pattern">
+                                <div class="offers-dots"></div>
+                            </div>
+                            <div class="offers-info">
+                                <p>Découvrez des opportunités d'emploi adaptées à votre profil et vos compétences</p>
+                                <div class="offers-stats">
+                                    <span class="stat-item">500+ offres disponibles</span>
+                                    <span class="stat-item">Tous secteurs</span>
+                                    <span class="stat-item">Mise à jour quotidienne</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Internship offers section -->
+                    <section class="offers-section">
+                        <h2 class="offers-section-title">Voir les offres des stages</h2>
+                        <div class="offers-area">
+                            <div class="offers-pattern">
+                                <div class="offers-dots"></div>
+                            </div>
+                            <div class="offers-info">
+                                <p>Trouvez le stage parfait pour développer vos compétences professionnelles</p>
+                                <div class="offers-stats">
+                                    <span class="stat-item">200+ stages disponibles</span>
+                                    <span class="stat-item">Entreprises partenaires</span>
+                                    <span class="stat-item">Accompagnement personnalisé</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Description section -->
+                <div class="offers-description">
+                    <h3>Description</h3>
+                    <div class="description-content">
+                        <p>Notre plateforme vous connecte avec les meilleures opportunités professionnelles. Que vous recherchiez un emploi ou un stage, nous analysons votre profil pour vous proposer des offres personnalisées qui correspondent à vos aspirations et compétences.</p>
+                        <div class="description-features">
+                            <div class="feature-item">
+                                <strong>Matching intelligent</strong>
+                                <span>Algorithme basé sur vos résultats de tests</span>
+                            </div>
+                            <div class="feature-item">
+                                <strong>Suivi personnalisé</strong>
+                                <span>Accompagnement dans vos candidatures</span>
+                            </div>
+                            <div class="feature-item">
+                                <strong>Réseau d'entreprises</strong>
+                                <span>Partenaires de confiance dans tous les secteurs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Careers Page -->
+    <div id="careers-page" class="page hidden">
+        <!-- Expanded Header with full navigation -->
+        <header class="careers-header">
+            <div class="careers-header-content">
+                <div class="logo-section">
+                    <div class="logo-circle">
+                        <div class="logo-inner"></div>
+                    </div>
+                    <h1 class="logo-text">ISEREOO</h1>
+                </div>
+                <nav class="expanded-nav">
+                    <button class="nav-btn" id="careers-nav-accueil">Accueil</button>
+                    <button class="nav-btn" id="careers-nav-tests">Tests</button>
+                    <button class="nav-btn active">Métiers</button>
+                    <button class="nav-btn" id="careers-nav-offres">Offres</button>
+                    <button class="nav-btn" id="careers-nav-apprendre">Apprendre</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Careers Content -->
+        <main class="careers-main">
+            <div class="careers-content">
+                <!-- Title section -->
+                <div class="careers-title-section">
+                    <h2 class="careers-main-title">Voici les métiers existant et leurs descriptions</h2>
+                </div>
+
+                <!-- Main careers area -->
+                <div class="careers-main-area">
+                    <button class="careers-nav-arrow left" id="careers-prev">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <path d="m15 18-6-6 6-6"/>
+                        </svg>
+                    </button>
+
+                    <div class="careers-display-area">
+                        <div class="careers-header-box">
+                            <h3>Métiers</h3>
+                        </div>
+                        
+                        <div class="careers-content-area">
+                            <div class="career-item active" data-career="tech">
+                                <h4>Développeur Web</h4>
+                                <p>Créez des sites web et applications interactives en utilisant les dernières technologies.</p>
+                                <div class="career-skills">
+                                    <span class="skill-tag">HTML/CSS</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">React</span>
+                                </div>
+                            </div>
+                            
+                            <div class="career-item" data-career="design">
+                                <h4>Designer UX/UI</h4>
+                                <p>Concevez des expériences utilisateur intuitives et des interfaces visuellement attrayantes.</p>
+                                <div class="career-skills">
+                                    <span class="skill-tag">Figma</span>
+                                    <span class="skill-tag">Photoshop</span>
+                                    <span class="skill-tag">Prototypage</span>
+                                </div>
+                            </div>
+                            
+                            <div class="career-item" data-career="marketing">
+                                <h4>Marketing Digital</h4>
+                                <p>Développez des stratégies marketing innovantes pour promouvoir les marques en ligne.</p>
+                                <div class="career-skills">
+                                    <span class="skill-tag">SEO</span>
+                                    <span class="skill-tag">Analytics</span>
+                                    <span class="skill-tag">Social Media</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="careers-descriptions-box">
+                            <h3>Descriptions</h3>
+                        </div>
+                    </div>
+
+                    <button class="careers-nav-arrow right" id="careers-next">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <path d="m9 18 6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Profile Page -->
+    <div id="profile-page" class="page hidden">
+        <!-- Back button -->
+        <div class="profile-back-container">
+            <button id="profile-back-btn" class="profile-back-btn">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m12 19-7-7 7-7"/>
+                    <path d="M19 12H5"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Main Profile Content -->
+        <main class="profile-main">
+            <div class="profile-content">
+                <!-- Description section -->
+                <div class="profile-description">
+                    <h2>Description</h2>
+                    <p>Découvrez votre profil personnalisé basé sur vos résultats aux tests de compétences et d'orientations. Votre parcours unique vous guide vers les meilleures opportunités.</p>
+                </div>
+
+                <!-- Form sections container -->
+                <div class="profile-forms">
+                    <!-- Formulaire test des compétences -->
+                    <section class="profile-form-section">
+                        <h3 class="form-section-title">Formulaire test des compétences</h3>
+                        <div class="form-progress-area">
+                            <div class="progress-pattern">
+                                <div class="progress-dots"></div>
+                            </div>
+                            <div class="progress-info">
+                                <p>Compétences évaluées : Communication, Résolution de problèmes, Créativité</p>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                                <span class="progress-text">75% complété</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Formulaire test d'orientations -->
+                    <section class="profile-form-section">
+                        <h3 class="form-section-title">Formulaire test d'orientations</h3>
+                        <div class="form-progress-area">
+                            <div class="progress-pattern">
+                                <div class="progress-dots"></div>
+                            </div>
+                            <div class="progress-info">
+                                <p>Orientations explorées : Technologie, Sciences, Arts, Commerce</p>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 60%"></div>
+                                </div>
+                                <span class="progress-text">60% complété</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Profile actions -->
+                <div class="profile-actions">
+                    <button class="profile-action-btn primary">Continuer les tests</button>
+                    <button class="profile-action-btn secondary">Télécharger le rapport</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Learning Page -->
+    <div id="learning-page" class="page hidden">
+        <!-- Expanded Header with full navigation -->
+        <header class="learning-header">
+            <div class="learning-header-content">
+                <div class="logo-section">
+                    <div class="logo-circle">
+                        <div class="logo-inner"></div>
+                    </div>
+                    <h1 class="logo-text">ISEREOO</h1>
+                </div>
+                <nav class="expanded-nav">
+                    <button class="nav-btn" id="learning-nav-accueil">Accueil</button>
+                    <button class="nav-btn" id="learning-nav-tests">Tests</button>
+                    <button class="nav-btn" id="learning-nav-metiers">Métiers</button>
+                    <button class="nav-btn" id="learning-nav-offres">Offres</button>
+                    <button class="nav-btn active">Apprendre</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Learning Content -->
+        <main class="learning-main">
+            <div class="learning-content">
+                <!-- Learning platforms grid -->
+                <div class="learning-platforms">
+                    <!-- Canva Platform -->
+                    <div class="learning-platform">
+                        <div class="platform-header">
+                            <h2>Canva</h2>
+                        </div>
+                        <div class="platform-description">
+                            <h3>Description</h3>
+                            <div class="description-content">
+                                <p>Créez des designs professionnels facilement avec Canva. Apprenez à utiliser cet outil de design graphique pour créer des présentations, logos, et contenus visuels.</p>
+                                <div class="platform-features">
+                                    <span class="feature-tag">Design graphique</span>
+                                    <span class="feature-tag">Templates</span>
+                                    <span class="feature-tag">Collaboration</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- W3school Platform -->
+                    <div class="learning-platform">
+                        <div class="platform-header">
+                            <h2>W3school</h2>
+                        </div>
+                        <div class="platform-description">
+                            <h3>Description</h3>
+                            <div class="description-content">
+                                <p>Maîtrisez les technologies web avec W3Schools. Apprenez HTML, CSS, JavaScript et bien plus avec des tutoriels interactifs et des exemples pratiques.</p>
+                                <div class="platform-features">
+                                    <span class="feature-tag">HTML/CSS</span>
+                                    <span class="feature-tag">JavaScript</span>
+                                    <span class="feature-tag">Tutoriels</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Udemy Platform -->
+                    <div class="learning-platform">
+                        <div class="platform-header">
+                            <h2>Udemy</h2>
+                        </div>
+                        <div class="platform-description">
+                            <h3>Description</h3>
+                            <div class="description-content">
+                                <p>Développez vos compétences avec Udemy. Accédez à des milliers de cours en ligne dans tous les domaines : programmation, marketing, design et plus encore.</p>
+                                <div class="platform-features">
+                                    <span class="feature-tag">Cours vidéo</span>
+                                    <span class="feature-tag">Certificats</span>
+                                    <span class="feature-tag">Tous niveaux</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- See more button -->
+                <div class="learning-more-container">
+                    <button id="learning-more-btn" class="learning-more-btn">
+                        Voir plus
+                        <span class="arrow">→</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- More Learning Resources Page -->
+    <div id="more-learning-page" class="page hidden">
+        <!-- Back button -->
+        <div class="more-learning-back-container">
+            <button id="more-learning-back-btn" class="more-learning-back-btn">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m12 19-7-7 7-7"/>
+                    <path d="M19 12H5"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Main More Learning Content -->
+        <main class="more-learning-main">
+            <div class="more-learning-content">
+                <!-- Additional learning platforms grid -->
+                <div class="more-learning-platforms">
+                    <!-- Open Classroom Platform -->
+                    <div class="more-learning-platform">
+                        <div class="more-platform-header">
+                            <h2>Open Classroom</h2>
+                        </div>
+                        <div class="more-platform-description">
+                            <h3>Description</h3>
+                            <div class="more-description-content">
+                                <p>Apprenez avec OpenClassrooms, la plateforme française de référence pour l'apprentissage en ligne. Suivez des parcours certifiants dans le développement, le marketing digital, et bien plus.</p>
+                                <div class="more-platform-features">
+                                    <span class="more-feature-tag">Parcours certifiants</span>
+                                    <span class="more-feature-tag">Mentorat</span>
+                                    <span class="more-feature-tag">Projets pratiques</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vagabon Platform -->
+                    <div class="more-learning-platform">
+                        <div class="more-platform-header">
+                            <h2>Vagabon</h2>
+                        </div>
+                        <div class="more-platform-description">
+                            <h3>Description</h3>
+                            <div class="more-description-content">
+                                <p>Découvrez Vagabon pour apprendre les langues étrangères de manière interactive. Perfectionnez votre anglais, espagnol, allemand avec des méthodes innovantes et ludiques.</p>
+                                <div class="more-platform-features">
+                                    <span class="more-feature-tag">Langues étrangères</span>
+                                    <span class="more-feature-tag">Méthode interactive</span>
+                                    <span class="more-feature-tag">Conversation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MDN Platform -->
+                    <div class="more-learning-platform">
+                        <div class="more-platform-header">
+                            <h2>MDN</h2>
+                        </div>
+                        <div class="more-platform-description">
+                            <h3>Description</h3>
+                            <div class="more-description-content">
+                                <p>Mozilla Developer Network (MDN) est la ressource ultime pour les développeurs web. Accédez à la documentation complète sur HTML, CSS, JavaScript et les APIs web.</p>
+                                <div class="more-platform-features">
+                                    <span class="more-feature-tag">Documentation officielle</span>
+                                    <span class="more-feature-tag">APIs Web</span>
+                                    <span class="more-feature-tag">Standards web</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Watch tutorials button -->
+                <div class="tutorials-button-container">
+                    <button id="tutorials-btn" class="tutorials-btn">
+                        Regarder des tutos
+                        <span class="arrow">→</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Tutorials Page -->
+    <div id="tutorials-page" class="page hidden">
+        <!-- Back button -->
+        <div class="tutorials-back-container">
+            <button id="tutorials-back-btn" class="tutorials-back-btn">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m12 19-7-7 7-7"/>
+                    <path d="M19 12H5"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Main Tutorials Content -->
+        <main class="tutorials-main">
+            <div class="tutorials-content">
+                <!-- Description section -->
+                <div class="tutorials-description">
+                    <h2>Description</h2>
+                    <p>Explorez notre collection complète de tutoriels vidéo pour maîtriser les outils essentiels du digital. Apprenez à votre rythme avec des guides pratiques et des projets concrets.</p>
+                </div>
+
+                <!-- Tutorials grid -->
+                <div class="tutorials-grid">
+                    <!-- Canva Tutorials -->
+                    <div class="tutorial-platform">
+                        <div class="tutorial-header">
+                            <h3>Canva</h3>
+                        </div>
+                        <div class="tutorial-content">
+                            <div class="tutorial-preview">
+                                <div class="tutorial-pattern">
+                                    <div class="tutorial-dots"></div>
+                                </div>
+                                <div class="tutorial-info">
+                                    <h4>Créer des designs professionnels</h4>
+                                    <p>15 tutoriels • 3h de contenu</p>
+                                    <div class="tutorial-topics">
+                                        <span class="topic-tag">Logos</span>
+                                        <span class="topic-tag">Présentations</span>
+                                        <span class="topic-tag">Réseaux sociaux</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tutorial-description">
+                            <h4>Description</h4>
+                            <p>Maîtrisez Canva de A à Z : création de logos, designs pour réseaux sociaux, présentations professionnelles et bien plus.</p>
+                        </div>
+                    </div>
+
+                    <!-- Vagabon Tutorials -->
+                    <div class="tutorial-platform">
+                        <div class="tutorial-header">
+                            <h3>Vagabon</h3>
+                        </div>
+                        <div class="tutorial-content">
+                            <div class="tutorial-preview">
+                                <div class="tutorial-pattern">
+                                    <div class="tutorial-dots"></div>
+                                </div>
+                                <div class="tutorial-info">
+                                    <h4>Apprendre les langues efficacement</h4>
+                                    <p>20 tutoriels • 4h de contenu</p>
+                                    <div class="tutorial-topics">
+                                        <span class="topic-tag">Conversation</span>
+                                        <span class="topic-tag">Grammaire</span>
+                                        <span class="topic-tag">Vocabulaire</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tutorial-description">
+                            <h4>Description</h4>
+                            <p>Perfectionnez votre apprentissage des langues avec des méthodes interactives et des exercices pratiques de conversation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Udemy Tutorials -->
+                    <div class="tutorial-platform">
+                        <div class="tutorial-header">
+                            <h3>Udemy</h3>
+                        </div>
+                        <div class="tutorial-content">
+                            <div class="tutorial-preview">
+                                <div class="tutorial-pattern">
+                                    <div class="tutorial-dots"></div>
+                                </div>
+                                <div class="tutorial-info">
+                                    <h4>Développement et compétences</h4>
+                                    <p>25 tutoriels • 6h de contenu</p>
+                                    <div class="tutorial-topics">
+                                        <span class="topic-tag">Programmation</span>
+                                        <span class="topic-tag">Marketing</span>
+                                        <span class="topic-tag">Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tutorial-description">
+                            <h4>Description</h4>
+                            <p>Développez vos compétences professionnelles avec une sélection des meilleurs cours Udemy dans tous les domaines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
